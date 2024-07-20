@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+   
+    <header>
+        <h2>DCKAP Palli Inventory</h5>
+    </header>
+   
+
+    <!-- Dashboard -->
+    <h4 class='dashboardTitle'>DASHBOARD</h4>
+     <div class="dashboard">
+       
+     </div>
+
+     <div class="actions">
+        <button id="addProduct" >Add Product</button>
+        <button id="updateProduct" > Update Product </button>
+    </div>
+
+
+    <!-- ------------------------ -->
+    <div class="headline"><h3>Inventory Status</h3></div>
+
+     <div class="barchat">
+
+        <div class="graph">
+                
+         </div>
+
+    </div>
+
+        
+
+
+
+     <!-- tbale -->
+
+
+     <table >
+       
+            <tr>
+                <th>Product</th>
+                <th>Recipient</th>
+                <th>Quantity</th>
+            </tr>
+        
+
+        
+     </table>
+
+
+     <!-- ------------------------------ Add POP UP  -->
+
+     <div class="addpopup">
+        <div close="closediv"><span id="close" >X</span></div>
+           <div class="title"><h4>Add Product</h4></div>
+        <form action="" name="createForm">
+           <div class="productInput">
+               <label for="product">Product :</label> <input type="text" id="product" name="product" required>
+           </div>
+           <div class="quantityInput">
+              <label for="quantity">Quantity :</label> <input type="text" id="quantity" name="quantity" required>
+           </div>
+           <div class="recipientInput">
+            <label for="recipient">Recipient :</label> <input type="text"  name="recipient" required>
+         </div>
+           <div class="addBtn">
+                 <input type="submit" id="addSubmit" value="Add Product">
+           </div>
+        </form>
+     </div>
+
+<!-- Update Popup -->
+
+<div class="updatepopup">
+    <div close="closediv"><span id="close" >X</span></div>
+
+    <div class="title"><h4>Update Inventry</h4></div>
+   
+    <form name="updateForm">
+
+    <div class="productInput">
+        <label for="product">Product Name:</label> <input type="text" id="product" required>
+    </div>
+    <div class="quantityInput">
+       <label for="quantity">Quantity :</label> <input type="text" id="quantity" required>
+    </div>
+    <div class="recipientInput">
+        <label for="recipient">Recipient :</label> <input type="text" id="recipient" required>
+     </div>
+    <div class="updateBtn">
+          <button id="updateSubmit">update Product</button>
+    </div>
+   </form>
+</div>
+
+<script src="js/firebase.js" type="module"></script>
+</body>
+</html>
